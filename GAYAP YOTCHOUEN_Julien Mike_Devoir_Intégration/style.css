@@ -1,0 +1,55 @@
+body{background-image: url(image/photo.jpg); background-size: cover; background-repeat: no-repeat; }
+a{margin: 20px; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:rgb(219, 183, 97);}
+header main{color: white; padding: 20px; text-align: left;}
+.container{ display: flex;}
+main{flex: 1; padding: 20px;}
+aside{flex: 2; padding: 10px; margin: 20px;}
+.bold{background-color: rgb(103, 103, 219); padding: 10px; border-radius: 9px;}
+.page{font-weight: bold; font-family:arial, sans-serif; color: white; text-align: left;}
+.carte{font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; position: relative; z-index: 1; width: 100%; padding: 60px 40px; margin: 0;}
+.carte img{ border-radius: 8px;}
+.tell{text-align: center;}
+.tels{text-align: left;}
+hr.centre{width: 60px; margin: 10px center; border: none; background: black; height: 3px; border-radius: 8px;}
+hr.gauche{width: 60px; margin: 10px 0; border: none; background: black; height: 3px; border-radius: 8px;}
+.containers{display: flex; justify-content: center; padding: 20px;}
+.montre{display: flex; align-items: flex-start; flex: 3; margin: 20px; width: 50%;}
+.articles{display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;}
+.articles img{width: 30%;height: 180px; object-fit: cover;}
+footer{ color: white; text-align: center; padding: 45px; margin-top: 20px;}
+.rond{border-radius: 9px;}
+.footer a{display: block; color: white; margin: 5px 0px;}
+.classe{display: flex; justify-content: space-between; width: 100%;}
+ul{list-style: none;}
+.reseaux{display: flex; gap: 25px; align-items: center; margin-top: 10px; border: radius 30px;}
+.right{flex: 9; align-items: flex-start;}
+.left{flex: 1;}
+.colonne h4{letter-spacing: 3px; margin-bottom: 10px; color: white; font-family: Arial, Helvetica, sans-serif;}
+.colonne ul{ padding: 0;}
+.colonne li {margin-bottom: 8px;}
+.colonne a {color : white; text-decoration: none;}
+.colonne{margin: 30px; padding-right: 40px;}
+@media(max-width:900px){
+    .page{width: 95%;}
+    .container{gap: 15px;}
+    main{padding: 15px;}
+    aside{padding: 15px;}
+
+}
+@media(max-width: 768px){
+    .container{flex-direction: column;}
+    nav{flex-direction: column; align-items: center; gap: 10px;}
+    header{padding: 15px;}
+    h1{font-size: 24px;}
+    h2{font-size: 20px;}
+    p{font-size: 15px;}
+}
+@media(max-width: 480px){
+    .page{width: 100%;}
+    body{background-color: white;}
+    header{border-radius: 0;}
+    main{border-radius: 0; padding: 12px;}
+    aside{ border-radius: 0; padding: 12px; }
+    nav a {font-size: 14px; }
+    footer{font-size: 14px;}
+}
